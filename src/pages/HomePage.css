@@ -1,0 +1,147 @@
+.home-page {
+  padding: var(--spacing-lg) 0;
+}
+
+.home-page__hero {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.home-page__icon {
+  font-size: 5rem;
+  margin-bottom: var(--spacing-md);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.home-page__title {
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.3;
+}
+
+.home-page__description {
+  font-size: 1rem;
+  color: var(--text-light);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.home-page__actions {
+  margin-bottom: var(--spacing-xl);
+}
+
+.home-page__features {
+  margin-bottom: var(--spacing-xl);
+}
+
+.home-page__features-title {
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Feature Cards */
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-md);
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.feature-card__icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.feature-card__content {
+  flex: 1;
+}
+
+.feature-card__title {
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.feature-card__description {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* Stats */
+.home-page__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+}
+
+.stat-card {
+  background-color: var(--primary-light);
+  color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-card__value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-card__label {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  line-height: 1.3;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .home-page__title {
+    font-size: 2.25rem;
+  }
+
+  .home-page__description {
+    font-size: 1.125rem;
+  }
+
+  .feature-card {
+    padding: var(--spacing-lg);
+  }
+
+  .feature-card__icon {
+    font-size: 2.5rem;
+  }
+
+  .stat-card__value {
+    font-size: 3rem;
+  }
+
+  .stat-card__label {
+    font-size: 1rem;
+  }
+}
