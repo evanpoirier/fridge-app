@@ -23,6 +23,10 @@ dist-ssr
 *.tar.gz
 *.zip
 
+# Download pages (temporary)
+download.html
+telecharger.html
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
